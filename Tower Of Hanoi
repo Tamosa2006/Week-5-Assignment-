@@ -1,0 +1,9 @@
+class Solution:
+    def towerOfHanoi(self, n, fromm, to, aux):
+        if n == 0:
+            return 0
+
+        m1 = self.towerOfHanoi(n - 1, fromm, aux, to)
+
+        m2 = self.towerOfHanoi(n - 1, aux, to, fromm)
+        return 1 + m1 + m2
