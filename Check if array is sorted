@@ -1,5 +1,0 @@
-
-bool isSorted(int arr[], int n) {
-    // Code Here
-    
-}
